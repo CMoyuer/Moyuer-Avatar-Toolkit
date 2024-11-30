@@ -1,13 +1,13 @@
 {
   "packages": {
-    "cc.moyuer.moyuer-avatar-toolkit": {
+    "cc.moyuer.avatar-toolkit": {
       "versions": {
         "2.1.2": {
-          "name": "cc.moyuer.moyuer-avatar-toolkit",
-          "displayName": "moyuer's avatar tools",
+          "name": "cc.moyuer.avatar-toolkit",
+          "displayName": "Moyuer Avatar Toolkit",
           "version": "2.1.2",
           "unity": "2022.3",
-          "description": "moyuer's avatar tools for VRChat",
+          "description": "Moyuer's avatar tools for VRChat",
           "vrchatVersion": "2022.1.1",
           "author": {
             "name": "Moyuer",

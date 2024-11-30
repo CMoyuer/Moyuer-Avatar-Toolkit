@@ -13,11 +13,6 @@ namespace VRChatAvatarToolkit
 {
     public class MoyuToolkitUtils
     {
-        public static string GetPackageId()
-        {
-            return "cc.moyuer.avatartoolkit";
-        }
-
         /* ============================================== 控制台 ============================================== */
         public static void Print(params object[] strs)
         {
@@ -60,7 +55,7 @@ namespace VRChatAvatarToolkit
             /*var _path = AssetDatabase.GetAssetPath(MonoScript.FromScriptableObject(ScriptableObject.CreateInstance<MoyuToolkit>()));
             _path = _path.Substring(0, _path.LastIndexOf("/"));
             _path = _path.Substring(0, _path.LastIndexOf("/") + 1);*/
-            var _path = $"Packages/{GetPackageId()}/Editor/";
+            var _path = "Packages/cc.moyuer.avatartoolkit/Editor/";
             if (path != null)
             {
                 while (path.StartsWith("/"))

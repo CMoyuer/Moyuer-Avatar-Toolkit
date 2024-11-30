@@ -1,11 +1,12 @@
 {
-  "name": "cc.moyuer.avatartoolkit",
+  "name": "cc.moyuer.moyuer-avatar-toolkit",
   "displayName": "Moyuer Avatar Toolkit",
-  "version": "2.1.2",
-  "description": "VRChat Avatar\u8f85\u52a9\u8bbe\u8ba1\u5de5\u5177\u7bb1",
+  "version": "2.2.0",
+  "description": "\u5982\u68a6\u7684VRChat Avatar\u8f85\u52a9\u8bbe\u8ba1\u5de5\u5177\u7bb1\nMoyuer's avatar tools for VRChat",
   "gitDependencies": {},
   "vpmDependencies": {},
   "legacyFolders": {},
   "legacyFiles": {},
-  "localPath": "G:\\Documents\\Unity\\VRChat\\AvatarToolkit\\Packages\\cc.moyuer.vrcavatartoolkit"
+  "localPath": "G:\\Documents\\Unity\\VRChat\\AvatarToolkit\\Packages\\cc.moyuer.vrcavatartoolkit",
+  "unity": "2022.3"
 }

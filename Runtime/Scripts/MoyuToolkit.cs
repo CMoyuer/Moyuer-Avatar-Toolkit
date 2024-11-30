@@ -1,17 +1,16 @@
-﻿#if UNITY_EDITOR && VRC_SDK_VRCSDK3
+﻿#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 using static VRChatAvatarToolkit.MoyuToolkitUtils;
-
 namespace VRChatAvatarToolkit
 {
     public class MoyuToolkit : EditorWindow
     {
-        [MenuItem("VRC工具箱/VRC SDK 2转3", false, 1)]
-        public static void ShowWindow()
+        /*[MenuItem("VRC工具箱/Test", false, 0)]
+        static void ShowWindow_Test()
         {
-            GetWindow(typeof(FixAvatarToSdk3));
-        }
+
+        }*/
 
         [MenuItem("VRC工具箱/快速穿戴", false, 50)]
         public static void ShowWindow_QuickDressed()
@@ -28,25 +27,27 @@ namespace VRChatAvatarToolkit
         [MenuItem("VRC工具箱/我的衣柜", false, 52)]
         public static void ShowWindow_AvatarWardrobe()
         {
+#if VRC_SDK_VRCSDK3
             GetWindow(typeof(AvatarWardrobe));
+#else
+            TipNeedAvatarSdk();
+#endif
         }
 
         [MenuItem("VRC工具箱/动作管理器", false, 53)]
         static void ShowWindow_ActionManager()
         {
+#if VRC_SDK_VRCSDK3
             GetWindow(typeof(ActionManager));
+#else
+            TipNeedAvatarSdk();
+#endif
         }
 
         [MenuItem("VRC工具箱/MMD动作转换", false, 100)]
         public static void ShowWindow_Vmd2Anim()
         {
             GetWindow(typeof(Vmd2Anim));
-        }
-
-        [MenuItem("VRC工具箱/Language/Reload I18N", false, 1)]
-        public static void Reload_I18N()
-        {
-            I18N.Instance.Reload();
         }
 
         // 其他
@@ -80,12 +81,13 @@ namespace VRChatAvatarToolkit
             Application.OpenURL("https://afdian.net/@moyuer?tab=feed");
         }
 
-        // Override Method
-        private static new void GetWindow(System.Type t)
+#if !VRC_SDK_VRCSDK3
+        private static void TipNeedAvatarSdk()
         {
-            _ = I18N.Instance;
-            EditorWindow.GetWindow(t);
+            if (!EditorUtility.DisplayDialog("提醒", "未找到VRChat Avatar SDK，请安装后再试！", "前往下载", "取消")) return;
+            Application.OpenURL("https://vrchat.com/home/download");
         }
+#endif
     }
 }
 #endif
