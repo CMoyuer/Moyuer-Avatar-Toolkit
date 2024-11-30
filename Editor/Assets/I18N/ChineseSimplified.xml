@@ -1,0 +1,3 @@
+<MoyuToolkit>
+  <Item Key="hello" Value="你好，{0}、{1}和{2}!" />
+</MoyuToolkit>

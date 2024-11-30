@@ -2,10 +2,10 @@
   "packages": {
     "cc.moyuer.moyuer-avatar-toolkit": {
       "versions": {
-        "3.0.0": {
+        "2.1.2": {
           "name": "cc.moyuer.moyuer-avatar-toolkit",
           "displayName": "moyuer's avatar tools",
-          "version": "3.0.0",
+          "version": "2.1.2",
           "unity": "2022.3",
           "description": "moyuer's avatar tools for VRChat",
           "vrchatVersion": "2022.1.1",
@@ -14,7 +14,7 @@
             "email": "cmoyuer@qq.com",
             "url": "https://github.com/CMoyuer/Moyuer-Avatar-Toolkit"
           },
-          "url": "https://github.com/CMoyuer/Moyuer-Avatar-Toolkit/archive/refs/tags/3.0.0.zip?",
+          "url": "https://github.com/CMoyuer/Moyuer-Avatar-Toolkit/archive/refs/tags/2.1.2.zip?",
           "repo": "https://raw.githubusercontent.com/CMoyuer/Moyuer-Avatar-Toolkit/refs/heads/main/vpm.json"
         }
       }
